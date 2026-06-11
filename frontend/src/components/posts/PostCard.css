@@ -1,0 +1,140 @@
+.post-card {
+  padding: 18px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s;
+}
+
+.post-card:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.post-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.post-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.post-handle {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.delete-btn {
+  color: var(--text-muted);
+  padding: 6px;
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.post-content {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: var(--bg-hover);
+  color: var(--accent-light);
+}
+
+.action-btn.liked {
+  color: #f43f5e;
+}
+
+.filled-heart {
+  fill: #f43f5e;
+  color: #f43f5e;
+}
+
+.comments-section {
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.comment-body {
+  background: var(--bg-hover);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: 600;
+  color: var(--accent-light);
+  margin-right: 6px;
+}
+
+.comment-text {
+  color: var(--text-dim);
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}

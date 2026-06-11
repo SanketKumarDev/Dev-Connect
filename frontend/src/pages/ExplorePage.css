@@ -1,0 +1,29 @@
+.explore-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.explore-header {
+  margin-bottom: 24px;
+}
+
+.explore-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.explore-header p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.load-more {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}

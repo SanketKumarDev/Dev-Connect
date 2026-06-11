@@ -1,0 +1,89 @@
+.edit-profile-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.edit-profile-card {
+  padding: 28px;
+}
+
+.edit-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.avatar-upload {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+}
+
+.edit-avatar {
+  width: 90px;
+  height: 90px;
+  border: 3px solid var(--border);
+}
+
+.avatar-upload-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  border: 2px solid var(--bg-card);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.char-count {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.bio-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.save-btn {
+  align-self: flex-start;
+  padding: 10px 24px;
+}
+
+@media (max-width: 480px) {
+  .form-row { grid-template-columns: 1fr; }
+}
