@@ -8,13 +8,22 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(express.json());
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
-    credentials: true,
-  })
-);
+const allowedOrigins = [
+  "https://dev-connect-six-sepia.vercel.app",
+  "https://dev-connect-git-main-sanket-kumars-projects.vercel.app",
+  "https://dev-connect-a12hl5nqj-sanket-kumars-projects.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+}));
 
 // Routes
 app.use("/api/auth", require("./routes/auth.routes"));
