@@ -9,9 +9,8 @@ const app = express();
 
 // Middleware
 const allowedOrigins = [
+   "http://localhost:5173",
   "https://dev-connect-six-sepia.vercel.app",
-  "https://dev-connect-git-main-sanket-kumars-projects.vercel.app",
-  "https://dev-connect-a12hl5nqj-sanket-kumars-projects.vercel.app"
 ];
 
 app.use(cors({
